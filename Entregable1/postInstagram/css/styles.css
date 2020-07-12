@@ -1,0 +1,115 @@
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+
+
+.card {
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* ----------------TITULO------------------------------- */
+.titulo {
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 12px;
+
+}
+
+.usuario {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.nombre {
+    margin-top: 7px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre p {
+    margin: 2px;
+}
+
+/* -------------------FOTO-------------------------- */
+.foto img {
+    width: 500px;
+    height: 340px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+
+}
+
+/* ------------------CUERPO--------------------------- */
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.listaComentarios {
+    margin-left: 10px;
+}
+
+.listaComentarios p {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#verComentarios {
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.miniIcono {
+    justify-self: self-end;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+.haceCuantoTiempo p {
+    margin-left: 10px;
+    font-size: 7px;
+    opacity: 0.5;
+}
