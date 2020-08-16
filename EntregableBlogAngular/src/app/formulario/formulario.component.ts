@@ -19,10 +19,10 @@ export class FormularioComponent implements OnInit {
   }
 
   recogerDatosForm(pForm): void {
-    console.log('lo q saca el formulario', pForm);
+    // console.log('lo q saca el formulario', pForm);
     this.blogService.agregarPost(pForm);
-    console.log(this.arrPintarPosts);
+    // console.log(this.arrPintarPosts);
     this.blogService.savePosts(pForm);
-    // this.router.navigate(['/blog']);
+    this.router.navigate(['/blog']);
   }
 }

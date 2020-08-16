@@ -25,7 +25,8 @@
 
 
 <div id="contenedorDeFormulario" class="container-fluid justify-content-center">
-  <form class="formulario" #formularioEmpleado="ngForm" (ngSubmit)="recogerDatosForm(formularioEmpleado.value)">
+  <form id="paBorrar" class="formulario" #formularioEmpleado="ngForm"
+    (ngSubmit)="recogerDatosForm(formularioEmpleado.value)">
     <h1 class="text-center">AÑADIR POST</h1>
 
     <div class="form-group">
@@ -58,7 +59,7 @@
       <label for="exampleFormControlSelect1">Elige categoria</label>
       <select name="categoria" ngModel class="form-control" id="exampleFormControlSelect1">
         <option></option>
-        <option>Vacaiones</option>
+        <option>Vacaciones</option>
         <option>Deporte</option>
         <option>Sociedad</option>
       </select>
