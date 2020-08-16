@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand">
+    <img src="../../assets/iconoBlog.png" width="50" height="50" alt="" loading="lazy">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="" [routerLink]="['/blog']">Página principal</a>
+      </li>
+    </ul>
+  </div>
+  <span class="navbar-text">
+    Está usted en el formulario del blog de Darío Barrionuevo, entregable de Angular para Neoland 2020
+
+  </span>
+</nav>
+
+
+
+
+
+
+<div id="contenedorDeFormulario" class="container-fluid justify-content-center">
+  <form class="formulario" #formularioEmpleado="ngForm" (ngSubmit)="recogerDatosForm(formularioEmpleado.value)">
+    <h1 class="text-center">AÑADIR POST</h1>
+
+    <div class="form-group">
+      <label>Introduce el titulo</label>
+      <input name="titulo" ngModel type="text" class="form-control" placeholder="Introduce el titulo" />
+
+    </div>
+
+    <div class="form-group">
+      <label>Introduce el texto del post aqui</label>
+      <textarea name="texto" ngModel class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Introduce el autor</label>
+      <input name="autor" ngModel type="text" class="form-control" placeholder="Introduce el autor" />
+
+    </div>
+    <div class="form-group">
+      <label>Introduce la URL de la imagen</label>
+      <input name="imagen" ngModel class="form-control" placeholder="Introduce la URL de la imagen" />
+
+    </div>
+    <div class="form-group">
+      <label>Introduce la fecha de creacion</label>
+      <input name="fecha" ngModel type="date" class="form-control" />
+
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Elige categoria</label>
+      <select name="categoria" ngModel class="form-control" id="exampleFormControlSelect1">
+        <option></option>
+        <option>Vacaiones</option>
+        <option>Deporte</option>
+        <option>Sociedad</option>
+      </select>
+
+      <input type="submit" class="btn btn-lg btn-block btn-success mt-5" value="ENVIAR">
+    </div>
+  </form>
+</div>
