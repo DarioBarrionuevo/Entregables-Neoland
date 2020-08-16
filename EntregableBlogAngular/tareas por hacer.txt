@@ -1,0 +1,5 @@
+-Arreglar porque a partir del segundo post no deja ver la informacion detallada
+-Hacer que tanto en el desplegable como en el formulario las categorias sean variables 
+    en funcion de cuantas se creen, no un numero fijo como ahora que habria que mantenerlas a mano
+-Seguir intentandolo con el localStorage, me lo manda y lo guarda pero solamente consigo que guarde uno 
+    y no una serie de objetos(en string)
