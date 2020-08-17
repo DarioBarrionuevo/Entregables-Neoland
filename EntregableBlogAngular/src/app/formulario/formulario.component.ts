@@ -9,19 +9,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./formulario.component.css'],
 })
 export class FormularioComponent implements OnInit {
-  arrPintarPosts: Post[];
   post: Post;
   constructor(public blogService: BlogService, private router: Router) {}
 
-  ngOnInit(): void {
-    this.arrPintarPosts = this.blogService.getAllPosts();
-    // console.log(this.arrPintarPosts);
-  }
+  ngOnInit(): void {}
 
   recogerDatosForm(pForm): void {
-    // console.log('lo q saca el formulario', pForm);
-    this.blogService.agregarPost(pForm);
-    // console.log(this.arrPintarPosts);
     this.blogService.savePosts(pForm);
     this.router.navigate(['/blog']);
   }

@@ -9,22 +9,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent implements OnInit {
-  arrPintarPosts: Post[];
   arrPintarPostLocal: Post[];
-  // arrPintarPostsCategoria: Post[];
 
   constructor(public blogService: BlogService, private router: Router) {}
 
   ngOnInit(): void {
-    // this.arrPintarPosts = this.blogService.getAllPosts(); //CReados los posts a mano
-    // console.log(this.arrPintarPosts);
     const traerDeLocal = localStorage.getItem('posts');
     this.arrPintarPostLocal = JSON.parse(traerDeLocal); // Creados los posts desde local
     // console.log(this.arrPintarPostLocal);
-  }
-
-  pintarPostPorCategoria(pCategoria): void {
-    this.arrPintarPosts = this.blogService.getPostsByCategoria(pCategoria);
   }
 
   pintarPostPorCategoriaLocal(pCategoria): void {
